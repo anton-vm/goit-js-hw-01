@@ -1,7 +1,6 @@
 let input;
 let total = 0;
 
-console.log(total);
 
 while (true) {
   input = prompt("Введите число");

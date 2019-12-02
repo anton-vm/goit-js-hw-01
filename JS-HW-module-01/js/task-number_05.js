@@ -1,11 +1,13 @@
 const country = prompt("Ведите страну визита")
-const countryLow = country.toLowerCase()
+
 
 let price
 
 if (country === null) {
     alert("Отказ пользователя")
 } else {
+
+const countryLow = country.toLowerCase()
 
 switch (countryLow) {
 case "китай":

@@ -1,20 +1,15 @@
 let input;
 let total = 0;
 
-
-while (true) {
+do {
   input = prompt("Введите число");
-
-  if (input === null) {
-    break;
-  }
   const inputNumber = Number(input);
-
   if (Number.isNaN(inputNumber)) {
-    alert("Error");
+    alert("Ошибка, запишите число");
   } else {
     total = inputNumber + total;
   }
-}
+} while (input !== null)
+
 
 alert(`Общая сумма чисел равна ${total}`);

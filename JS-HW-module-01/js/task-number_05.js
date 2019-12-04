@@ -1,43 +1,36 @@
-const country = prompt("Ведите страну визита")
+const country = prompt("Ведите страну визита");
 
-
-let price
+const chinaPrice = 100,
+  chiliPrice = 250,
+  australiaPrice = 170,
+  indiaPrica = 80,
+  jamaikaPrice = 130;
 
 if (country === null) {
-    alert("Отказ пользователя")
+  alert("Отказ пользователя");
 } else {
+  switch (country.toLowerCase()) {
+    case "китай":
+      alert(`Доставка в ${country} будет стоить ${chinaPrice} кредитов`);
+      break;
 
-const countryLow = country.toLowerCase()
+    case "чили":
+      alert(`Доставка в ${country} будет стоить ${chiliPrice} кредитов`);
+      break;
 
-switch (countryLow) {
-case "китай":
-price = 100;
-alert(`Доставка в ${country} будет стоить ${price} кредитов`)
-break;
+    case "автралия":
+      alert(`Доставка в ${country} будет стоить ${australiaPrice} кредитов`);
+      break;
 
-case "чили":
-price = 250;
-alert(`Доставка в ${country} будет стоить ${price} кредитов`)
-break;
+    case "индия":
+      alert(`Доставка в ${country} будет стоить ${indiaPrica} кредитов`);
+      break;
 
-case "автралия":
-price = 170;
-alert(`Доставка в ${country} будет стоить ${price} кредитов`)
-break;
+    case "ямайка":
+      alert(`Доставка в ${country} будет стоить ${jamaikaPrice} кредитов`);
+      break;
 
-case "индия":
-price = 80;
-alert(`Доставка в ${country} будет стоить ${price} кредитов`)
-break;
-
-case "ямайка":
-price = 130;
-alert(`Доставка в ${country} будет стоить ${price} кредитов`)
-break;
-
-default: 
-alert("Не верная страна")
-
+    default:
+      alert("Не верная страна");
+  }
 }
-}
-

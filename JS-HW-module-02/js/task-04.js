@@ -1,9 +1,12 @@
 function formatString(string) {
 
-    const finalString = string.length<40 ? string : `${string.split('').splice(0, 40).join('')}...`
+    const finalString = string.length<40 ? string : `${string.slice(0, 40)}...`
 
 return finalString
 }
+
+
+
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 

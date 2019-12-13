@@ -5,8 +5,7 @@ function logItems(array) {
 let result
 
   for (let i = 0; i < array.length; i++) {
-  result = `${i+1} - ${array[i]}`
-console.log(result);
+console.log(`${i+1} - ${array[i]}`);
   }
 
 }

@@ -2,9 +2,9 @@
 
 function calculateEngravingPrice(message, pricePerWord) {
 
-    const stringArray = message.split(' ');
+    
 
-    return stringArray.length * pricePerWord
+    return message.split(' ').length * pricePerWord
 }
 
 console.log(calculateEngravingPrice("Dobryj dien towarishchi", 10))

@@ -2,18 +2,18 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 
 const isLoginValid = function(login) {
-  return login.length >= 4 && login.length <= 16 ? true : false;
+  return login.length >= 4 && login.length <= 16;
 };
 
 const isLoginUnique = function(logins, login) {
-  return logins.includes(login) ? false : true;
+  return logins.includes(login);
 };
 
 
 const addLogin = function(logins, login) {
   if (! isLoginValid(login)) {
     return "Ошибка! Логин должен быть от 4 до 16 символов";
-  } else if (! isLoginUnique(logins, login)) {
+  } if (! isLoginUnique(logins, login)) {
 
     return "Такой логин уже используется!";
   } 

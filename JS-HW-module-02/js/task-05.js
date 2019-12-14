@@ -1,7 +1,7 @@
 
 
 const checkForSpam = (message) => {
-    return (message.toLowerCase().split(' ').includes("sale") || message.toLowerCase().split(' ').includes("[spam]"));
+    return (message.toLowerCase().includes("sale") || message.toLowerCase().includes("spam"));
 }
 
 

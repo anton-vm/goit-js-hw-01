@@ -1,8 +1,7 @@
 function formatString(string) {
 
-    const finalString = string.length<40 ? string : `${string.slice(0, 40)}...`
+  return string.length<40 ? string : `${string.slice(0, 40)}...`
 
-return finalString
 }
 
 

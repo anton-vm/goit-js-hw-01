@@ -16,5 +16,4 @@ do {
 if (numbers.length) {
 for (let digit of numbers) {
     total += digit
-}}
-alert(total)
+}alert(total)}

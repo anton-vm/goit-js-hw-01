@@ -4,7 +4,7 @@ let sallery =0;
 for (let key in employees) {
   if (employees[key]>sallery) {
     sallery +=employees[key];
-    leader = [key]
+    leader = key
   }
 }
 return leader 

@@ -1,9 +1,9 @@
 class Storage {
-    constructor() {
-        this.items = [];
+    constructor(data) {
+        this.items = data;
     }
     getItems() {
-        console.log(this.items);
+        return this.items;
     }
     addItem(item) {
         if (!this.items.includes(item)) {
@@ -11,8 +11,8 @@ class Storage {
         }
     }
     removeItem(item) {
-        if (this.items.includes(item))
-        this.items.splice(item)
+        let index = this.items.indexOf(item)
+        this.items.splice(index, 1)
     }
 }
 
@@ -23,7 +23,7 @@ const storage = new Storage([
     'Антигравитатор',
 ]);
 
-  console.log(storage);
+//   console.log(storage);
   
   const items = storage.getItems();
   console.table(items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор" ]
@@ -33,3 +33,4 @@ const storage = new Storage([
   
   storage.removeItem('Пролонгер');
   console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
+ 

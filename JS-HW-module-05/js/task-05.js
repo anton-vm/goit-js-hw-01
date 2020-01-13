@@ -8,15 +8,15 @@ class Car {
         this.distance = distance;
     }
 
-    static getSpecs() {
-        console.log(this);
+    static getSpecs(newCar) {
+        console.log(newCar);
     }
 
     get price () {
         return this._price
     }
     set  price(price) {
-        return this._price = price
+        this._price = price
     }
 
     turnOn() {

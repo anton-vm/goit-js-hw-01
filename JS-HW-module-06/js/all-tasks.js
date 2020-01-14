@@ -95,8 +95,8 @@ const getSortedUniqueSkills = users => {
 
   const allSkills = [].concat(...skillsOfUsers);
 
-
-  return [...allSkills].sort();
+  const filteredSkills = allSkills.filter((item, index) => allSkills.indexOf(item) === index)
+  return [...filteredSkills].sort();
 
 };
 

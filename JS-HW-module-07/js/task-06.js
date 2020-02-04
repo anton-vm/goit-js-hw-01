@@ -5,7 +5,7 @@ console.log(length.dataset);
 
 validation.onblur = function check () {
 
-    if (validation.value.length >= 6) {
+    if (validation.value.length === 6) {
         validation.classList.add('valid')
     } else {
         validation.classList.add('invalid')

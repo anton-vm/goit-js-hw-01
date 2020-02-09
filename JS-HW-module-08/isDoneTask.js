@@ -8,9 +8,9 @@ class ImageGallery {
   }
 
   renderList() {
-    return `<ul class="gallery">
+    return `
     ${this.list.reduce((acc, el) => this.renderListItem(el) + acc, "")}
-    </ul>`;
+    `;
   }
 
   renderListItem(obj) {
